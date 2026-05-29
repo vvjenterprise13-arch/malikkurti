@@ -427,7 +427,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // You might want to parse 'data' if 'add_to_cart.php' returns JSON
                 // console.log(data); // For debugging
                 if (actionType === 'add') { window.location.reload(); }
-                else if (actionType === 'buy') { window.location.href = 'address.php'; }
+                else if (actionType === 'buy') { window.location.href = 'address'; }
             })
             .catch(error => { console.error('Error:', error); alert('Failed to add to cart or buy now. Please try again.'); }); // User feedback
     }
